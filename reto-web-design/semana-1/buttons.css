@@ -1,0 +1,222 @@
+@import 'source/fontello/css/fontello.css';
+
+body
+{
+	font-size: 16px;
+	font-family: sans-serif;
+
+}
+
+.col
+{
+    display: inline-block;
+    float: left;
+}
+.col--1-4
+{
+    width: 25%;
+}
+
+.list
+{
+    margin-top: 3.75rem;
+}
+.list *
+{
+    display: list-item;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+}
+.list__item
+{
+    margin-bottom: 3.75rem;
+    color: white;
+}
+
+.main
+{
+	background-color: #37474f;
+    margin: 0;
+    padding: 0;
+
+}
+.main__content {
+    max-width: 1010px;
+    background-color: #37474f;
+    margin: 0 auto;
+    text-align: center;
+}
+.main__title
+{
+	font-size: 3.5rem;
+    line-height: 3.5rem;
+    color: #cddc39;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0;
+    margin-top: 76px;
+    padding-left: 5%;
+    letter-spacing: 27px;
+}
+.main__subtitle {
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: 22px;
+    display: block;
+}
+
+.btn 
+{
+    width: 133.3px;
+    height: 53.3px;
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 3.3px;
+    box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, 0.5);
+    
+    text-overflow: ellipsis;
+    text-decoration: none;
+    line-height: 53.3px;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+}
+
+.btn--icon 
+{
+	width: 53.3px;
+    height: 53.3px;
+    line-height: 53.3px;
+    border-radius: 50%;
+    position: relative;
+    font-size: 0px;
+}
+.btn--icon:before
+{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    margin: 0;
+    line-height: inherit;
+}
+
+.btn:active,
+.btn--pressed {
+    box-shadow: 0px 3px 9px -3px rgba(0, 0, 0, 0.5);
+}
+
+
+.btn[disabled="disabled"],
+.btn--disabled {
+    background-color: #999999 !important;
+    opacity: 0.20;
+    box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.5);
+    /* box-shadow: none; */
+}
+
+.btn-search 
+{
+    color: white;
+    background-color: #f44336;
+}
+.btn-search:active,
+.btn-search--pressed,
+.btn-search.btn--pressed {
+    background-color: #de746c;
+}
+
+.btn-add 
+{
+    color: white;
+    background-color: #e91e63;
+}
+.btn-add:active,
+.btn-add--pressed,
+.btn-add.btn--pressed {
+    background-color: #d85e87;
+}
+
+.btn-chat
+{
+    color: white;
+    background-color: #9c27b0;
+}
+.btn-chat:active,
+.btn-chat--pressed,
+.btn-chat.btn--pressed {
+    background-color: #aa63b6;
+}
+
+.btn-email
+{
+    color: white;
+    background-color: #673ab7;
+}
+.btn-email:active,
+.btn-email--pressed,
+.btn-email.btn--pressed {
+    background-color: #aa63b6;
+}
+
+.btn-edit
+{
+    color: white;
+    background-color: #3f51b5;
+}
+.btn-edit:active,
+.btn-edit--pressed,
+.btn-edit.btn--pressed {
+    background-color: #727db9;
+}
+
+.btn-alert
+{
+    color: white;
+    background-color: #00bcd4;
+}
+.btn-alert:active,
+.btn-alert--pressed,
+.btn-alert.btn--pressed {
+    background-color: #4cbdcb;
+}
+
+.btn-favorite
+{
+    color: white;
+    background-color: #4caf50;
+}
+.btn-favorite:active,
+.btn-favorite--pressed,
+.btn-favorite.btn--pressed {
+    background-color: #7ab57c;
+}
+
+.btn-download
+{
+    color: white;
+    background-color: #ffc107;
+}
+.btn-download:active,
+.btn-download--pressed,
+.btn-download.btn--pressed {
+    background-color: #e5c050;
+}
+
+.btn-music
+{
+    color: white;
+    background-color: #ff9800;
+}
+.btn-music:active,
+.btn-music--pressed,
+.btn-music.btn--pressed {
+    background-color: #e5a74c;
+}

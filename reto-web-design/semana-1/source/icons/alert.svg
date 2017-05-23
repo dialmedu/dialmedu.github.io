@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500mm"
+   height="500mm"
+   viewBox="0 0 499.99999 499.99999"
+   version="1.1"
+   id="svg6611"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="alert.svg">
+  <defs
+     id="defs6605" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.175"
+     inkscape:cx="214.48197"
+     inkscape:cy="1396.2785"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="719"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata6608">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(34.484483,355.27099)">
+    <g
+       id="g2012"
+       transform="matrix(24.725652,0,0,-24.725652,228.53128,112.21285)">
+      <path
+         d="M 0,0 H -1.195 C -2.644,0 -2.75,0.12 -2.757,1.494 H 2.011 C 1.954,0.204 1.543,0 0,0 m 7.104,6.538 v 4.971 c 0,4.037 -3.37,7.32 -7.371,7.32 h -0.43 c -4.001,0 -7.143,-3.283 -7.143,-7.32 V 6.568 C -9.167,6.527 -10.231,5.446 -10.231,4.109 V 3.96 c 0,-1.362 1.104,-2.466 2.465,-2.466 h 3.819 c 0.038,-1.881 0.422,-2.689 2.752,-2.689 H 0 c 2.221,0 3.108,0.676 3.2,2.689 h 3.53 c 1.362,0 2.466,1.104 2.466,2.466 v 0.149 c 0,1.234 -0.909,2.247 -2.092,2.429"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path2014"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
