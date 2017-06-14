@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head lang="es_Es">
+	<meta charset="utf-8">
+	<title>Semana2</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="paletas.css">
+	<link rel="stylesheet" type="text/css" href="helados.css">
+	<script src="https://unpkg.com/vue"></script>
+
+</head>
+<body>
+<div class="main-iu" id="appaletas">
+	<h1 class="p_titulo">{{message}}</h1>
+	<div class="p_paletas" >
+		<!-- paleta -->
+		<div v-for="flavor in flavors" class="p_paletas__paleta p_paleta" v-bind:id="flavor.name">
+			<div class="p_paleta__forma">
+				
+				<div class="p_paleta__forma__helado">
+					
+				</div>
+				<div class="p_paleta__forma__palo"></div>
+
+			</div>
+			<div class="p_paleta__info">
+				<h2>{{flavor.name}}</h2>
+				<div v-for="color in flavor.colors">
+					<span class="p_paleta__info__color">
+						<div class="color" style="background-color: #17ead9"></div>
+						<a class="color__nombre">{{color.name}}</a>
+					</span>
+				</div>
+			</div>
+		</div> <!-- end paleta -->
+		<!-- paleta -->
+		<div class="p_paletas__paleta p_paleta" id="mint">
+			<div class="p_paleta__forma">
+				
+				<div class="p_paleta__forma__helado">
+					
+				</div>
+				<div class="p_paleta__forma__palo"></div>
+
+			</div>
+			<div class="p_paleta__info">
+				<h2>Mint</h2>
+				<span class="p_paleta__info__color">
+					<div class="color" style="background-color: #23bcbb"></div>
+					<a class="color__nombre">#23bcbb</a>
+				</span>
+				<span class="p_paleta__info__color">
+					<div class="color" style="background-color: #45e994"></div>
+					<a class="color__nombre">#45e994</a>
+				</span>
+			</div>
+		</div> <!-- end paleta -->
+
+		<!-- paleta -->
+		<div class="p_paletas__paleta p_paleta" id="orange">
+			<div class="p_paleta__forma">
+				
+				<div class="p_paleta__forma__helado">
+					
+				</div>
+				<div class="p_paleta__forma__palo"></div>
+
+			</div>
+			<div class="p_paleta__info">
+				<h2>BlueBerry</h2>
+				<span class="p_paleta__info__color">
+					<div class="color" style="background-color: #ffdea7"></div>
+					<a class="color__nombre">#ffdea7</a>
+				</span>
+				<span class="p_paleta__info__color">
+					<div class="color" style="background-color: #ea6362"></div>
+					<a class="color__nombre">#ea6362</a>
+				</span>
+			</div>
+		</div> <!-- end paleta -->
+
+		<!-- paleta -->
+		<div class="p_paletas__paleta p_paleta" id="pomeranate">
+			<div class="p_paleta__forma">
+				
+				<div class="p_paleta__forma__helado">
+					
+				</div>
+				<div class="p_paleta__forma__palo"></div>
+
+			</div>
+			<div class="p_paleta__info">
+				<h2>BlueBerry</h2>
+				<span class="p_paleta__info__color">
+					<div class="color" style="background-color: #9b3cb7"></div>
+					<a class="color__nombre">#9b3cb7</a>
+				</span>
+				<span class="p_paleta__info__color">
+					<div class="color" style="background-color: #ff396f"></div>
+					<a class="color__nombre">#ff396f</a>
+				</span>
+			</div>
+		</div> <!-- end paleta -->
+
+		<!-- paleta -->
+		<div class="p_paletas__paleta p_paleta" id="greenblue">
+			<div class="p_paleta__forma">
+				
+				<div class="p_paleta__forma__helado">
+					
+				</div>
+				<div class="p_paleta__forma__palo"></div>
+
+			</div>
+			<div class="p_paleta__info">
+				<h2>BlueBerry</h2>
+				<span class="p_paleta__info__color">
+					<div class="color" style="background-color: #004992"></div>
+					<a class="color__nombre">#004992</a>
+				</span>
+				<span class="p_paleta__info__color">
+					<div class="color" style="background-color: #78cc37"></div>
+					<a class="color__nombre">#78cc37</a>
+				</span>
+			</div>
+		</div> <!-- end paleta -->
+
+		<!-- paleta -->
+		<div class="p_paletas__paleta p_paleta">
+			<div class="p_paleta__forma">
+				
+				<div class="p_paleta__forma__helado">
+					
+				</div>
+				<div class="p_paleta__forma__palo"></div>
+
+			</div>
+			<div class="p_paleta__info">
+				<h2>BlueBerry</h2>
+				<span class="p_paleta__info__color">
+					<div class="color" style="background-color: #17ead9"></div>
+					<a class="color__nombre">#17ead9</a>
+				</span>
+				<span class="p_paleta__info__color">
+					<div class="color" style="background-color: #6078ea"></div>
+					<a class="color__nombre">#6078ea</a>
+				</span>
+			</div>
+		</div> <!-- end paleta -->
+
+		<!-- paleta -->
+		<div class="p_paletas__paleta p_paleta">
+			<div class="p_paleta__forma">
+				
+				<div class="p_paleta__forma__helado">
+					
+				</div>
+				<div class="p_paleta__forma__palo"></div>
+
+			</div>
+			<div class="p_paleta__info">
+				<h2>BlueBerry</h2>
+				<span class="p_paleta__info__color">
+					<div class="color" style="background-color: #17ead9"></div>
+					<a class="color__nombre">#17ead9</a>
+				</span>
+				<span class="p_paleta__info__color">
+					<div class="color" style="background-color: #6078ea"></div>
+					<a class="color__nombre">#6078ea</a>
+				</span>
+			</div>
+		</div> <!-- end paleta -->
+	</div>
+</div>
+
+<script type="text/javascript" src="paletas_core.js"></script>
+
+</body>
+</html>

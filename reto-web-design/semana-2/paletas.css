@@ -1,0 +1,73 @@
+@font-face {
+   font-family: arialmt;
+   font-style: normal;
+   font-weight: normal;
+   src: url(ari.ttf);
+}
+
+@font-face {
+   font-family: damion;
+   font-style: normal;
+   font-weight: normal;
+   src: url(Damion-Regular.ttf);
+}
+
+
+.p_titulo {
+    text-align: center;
+    font-family: damion;
+    font-size: 39pt;
+    margin-top: 48px;
+    margin-bottom: 67px;
+}
+
+.p_paleta__info h2 {
+    font-size: 15pt;
+    text-align: center;
+    font-weight: bold;
+    font-family: damion;
+   	text-transform: capitalize;
+}
+
+.color {
+    background-color: gray;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.p_paleta__info__color {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.p_paletas__paleta.p_paleta {
+    width: 100px;
+    display: inline-block;
+    margin: 0 45px;
+    margin-bottom: 45px;
+
+}
+
+.p_paleta__forma__helado {
+    width: 66px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: gray;
+    border-radius: 33px 33px 15px 15px;
+}
+
+.p_paleta__forma__palo {
+    width: 27px;
+    height: 81px;
+    margin: 0 auto;
+    background-color: #f7d39f;
+    margin-top: -40.5px;
+    border-radius: 13.5px;
+    position: relative;
+}
+
+.p_paleta__forma {
+    position: relative;
+}
