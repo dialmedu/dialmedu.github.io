@@ -16,9 +16,10 @@
 .p_titulo {
     text-align: center;
     font-family: damion;
-    font-size: 39pt;
+    font-size: 60.0px;
     margin-top: 48px;
     margin-bottom: 67px;
+    text-transform: capitalize;
 }
 
 .color {
