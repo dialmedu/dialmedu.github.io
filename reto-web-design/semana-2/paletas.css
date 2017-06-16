@@ -12,6 +12,36 @@
    src: url(Damion-Regular.ttf);
 }
 
+body,html
+{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.status-design {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 6vh;
+    margin: 2rem;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 10vh;
+    line-height: 10vh;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+#appaletas {
+    min-width: calc( 20vh * 4);
+    display: block;
+    overflow: hidden;
+}
+
 
 .p_titulo {
     text-align: center;
@@ -34,7 +64,7 @@
     width: 75%;
     margin: 0 auto;
     max-width: 1024px;
-    min-width: 480px;
+    min-width: calc( 20vh * 4);
 }
 
 .p_paletas__paleta.p_paleta,
@@ -93,16 +123,15 @@
     height: 24vh;
     margin: 0 auto;
     background-color: #d8e8e8;
-    border-radius: 8.5vh 8.5vh 4vh 4vh;
+    border-radius: 8.5vh 8.5vh 5vh 5vh;
 }
 
 .p_paleta__forma__palo {
     width: 6vh;
-    height: 18vh;
+    height: 17vh;
     margin: 0 auto;
     background-color: #f7d39f;
-    margin-top: -9vh;
+    margin-top: -9.5vh;
     border-radius: 6vh;
     position: relative;
 }
-
