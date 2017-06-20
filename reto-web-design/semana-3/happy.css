@@ -3,6 +3,7 @@ html,body {
     padding: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .main-ui {
@@ -33,8 +34,9 @@ html,body {
 	position: absolute;
     width: 30vw;
     animation-name: zoom_fire;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
+    opacity: 0;
 }
 
 .fire__one {
@@ -47,12 +49,14 @@ html,body {
     left: calc( 50vw - -3vh );
     width: 15vw;
     top: 10vh;
+    animation-delay: .8s;
 }
 
 .fire__tree {
     top: 15vh;
     left: 15vw;
     width: 15vw;
+    animation-delay: 1.6s;
 }
 
 @keyframes zoom_out

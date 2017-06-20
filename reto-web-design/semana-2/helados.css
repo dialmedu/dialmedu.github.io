@@ -1,10 +1,10 @@
 .p_paleta__forma__palo
 {
 	background: rgba(247,210,159,0.53);
-	background: -moz-linear-gradient(0deg, rgba(247,210,159,1) 44%, rgba(247,210,159,0.2) 45%);
-	background: -webkit-linear-gradient(0deg, rgba(247,210,159,1) 44%, rgba(247,210,159,0.2) 45%);
-	background: -o-linear-gradient(0deg, rgba(247,210,159,1) 44%, rgba(247,210,159,0.2) 45%);
-	background: -ms-linear-gradient(0deg, rgba(247,210,159,1) 44%, rgba(247,210,159,0.2) 45%);
-	background: linear-gradient(0deg, rgba(247,210,159,1) 44%, rgba(247,210,159,0.2) 45%);
+	background: -moz-linear-gradient(0deg, rgba(247,210,159,1) 44%, rgba(255,255,255,0.2) 45%);
+	background: -webkit-linear-gradient(0deg, rgba(247,210,159,1) 44%, rgba(255,255,255,0.2) 45%);
+	background: -o-linear-gradient(0deg, rgba(247,210,159,1) 44%, rgba(255,255,255,0.2) 45%);
+	background: -ms-linear-gradient(0deg, rgba(247,210,159,1) 44%, rgba(255,255,255,0.2) 45%);
+	background: linear-gradient(0deg, rgba(247,210,159,1) 44%, rgba(255,255,255,0.2) 45%);
 
 }
