@@ -3,11 +3,11 @@
 {
 	--pelicula__poster-height: 180px;
 	--pelicula__poster-width: 120px;
+	--pelicula__poster-box-shadow: 0px 10px 15px -6px black;
 	--pelicula__puntaje-background-color: #000;
 	--pelicula__puntaje-color: #fff;
 	--pelicula__image-background: #c0c0c0;
 	--pelicula__title-color: #fff;
-	--pelicula__poster-box-shadow: 0px 10px 15px -6px black;
 	--categoria__item-color: #fff;
 	--categoria__name-color: #fff;
 	--categoria__item-opacity: .5;
@@ -18,9 +18,19 @@
 {
 	position: relative;
 	
+	box-shadow: var(--pelicula__poster-box-shadow);	
 	height: var(--pelicula__poster-height);
 	width: var(--pelicula__poster-width);
 }
+
+
+@media (min-width: 1200px){
+	.pelicula__poster {
+		height: calc( var(--pelicula__poster-height) + 50px);
+		width: calc( var(--pelicula__poster-width) + 50px );
+	}
+}
+
 
 .pelicula__image {
 	width: 100%;
@@ -69,11 +79,6 @@
 	list-style: none;
 	color: var(--categoria__item-color);
 	opacity: var(--categoria__item-opacity);
-}
-
-.pelicula__poster {
-	box-shadow: var(--pelicula__poster-box-shadow);
-	/* border: none; */
 }
 
 video.pelicula__trailer {
