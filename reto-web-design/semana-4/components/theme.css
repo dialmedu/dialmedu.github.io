@@ -24,6 +24,7 @@
 	--menu__btn_search-height-1200px: 50px;
 	--menu__btn_search-width-1200px: 50px;
 	--menu__title-color: white;
+	--menu__link-height-1200px: 40px;
 }
 
 .dm_theme_movie .pelicula
@@ -40,6 +41,8 @@
 	
 	a.menu__link {
 		font-size: medium;
+		height: var(--menu__link-height-1200px);
+		line-height: var(--menu__link-height-1200px);
 	}
 
 	h2.pelicula__title {
