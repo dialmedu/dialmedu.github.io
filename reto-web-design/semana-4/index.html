@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head lang="es_Es">
+	<title>UX-Movie List</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="components/dev.css">
+	<link rel="stylesheet" type="text/css" href="components/layout.css">
+	<link rel="stylesheet" type="text/css" href="components/menu.css">
+	<link rel="stylesheet" type="text/css" href="components/pelicula.css">
+	<link rel="stylesheet" type="text/css" href="components/user.css">
+	<link rel="stylesheet" type="text/css" href="components/scroll-bar.css">
+	<link rel="stylesheet" type="text/css" href="components/theme.css">
+
+</head>
+<body class="dm_layout_panel dm_theme_movie">
+	
+	<header class="dm_layout_panel__menu menu dm_theme_menu">
+		<div class="row-fluid">
+			<div class="col col-sm-8">
+				<h1 class="menu__title">Trending Movies</h1>
+			</div>
+			<div class="col col-sm-4">
+				<div class="menu__options">
+					<a class="btn menu__btn_search" href="#"><i class="glyphicon glyphicon-search"></i></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	
+	<nav class="dm_layout_panel__side menu_side scroll-bar">
+		<div class="menu_side__user user">
+			<div class="row-fluid container-fluid">
+				<div class="col col-sm-4">
+					<figure class="user__nick">
+						<img class="user__image" src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-1/p50x50/14650767_10210026801883933_3966813777894458301_n.jpg?oh=85fbbea3cf8436b2330534da20985104&oe=59FF831D"></img>
+						<span class="user__messages">24</span>
+					</figure>
+				</div>
+				<div class="col col-sm-8">
+					<h2 class="user_name">Hi, Pepito</h2>
+				</div>
+			</div>
+		</div>
+		<ul class="menu_side__options">
+			<li class="menu__item menu__item--counter">
+				<a class="menu__link" href="#">My Collection</a>
+				<a class="menu__counter">98</a>
+			</li>
+			<li class="menu__item ">
+				<a class="menu__link menu__link--select" href="#">Trending Movies</a>
+			</li>
+			<li class="menu__item">
+				<a class="menu__link" href="#">History</a>
+			</li>
+			<li class="menu__item menu__item--counter">
+				<a class="menu__link" href="#">New Movies</a>
+				<a class="menu__counter">32</a>
+			</li>
+			<li class="menu__item menu__item--counter">
+				<a class="menu__link" href="#">Subscriptions</a>
+				<a class="menu__counter">86</a>
+			</li>
+			<hr class="menu_side__separator"></hr>
+			<li class="menu__item">
+				<a class="menu__link" href="#">Recommendations</a>
+			</li>
+			<li class="menu__item">
+				<a class="menu__link" href="#">Top Genres</a>
+			</li>
+			<li class="menu__item">
+				<a class="menu__link" href="#">Artist of the Months</a>
+			</li>
+			<li class="menu__item">
+				<a class="menu__link" href="#">Quote of the Week</a>
+			</li>
+		</ul>
+	</nav>
+	
+
+	<section class="dm_layout_panel__main scroll-bar">
+		<div class="row-fluid" >
+			<div id="listapeliculas">
+				<div class="col col-sm-3">
+					<div class="pelicula">
+						<figure class="pelicula__poster">
+							<img class="pelicula__image" src="images/Jurassic_World_poster-min.jpg">
+							<div class="pelicula__info">
+								<a class="btn pelicula__puntaje" href="#"><i class=""></i>8.5</a>
+							</div>
+							<!--<video class="pelicula__trailer" src="videos/source.mp4" controls="true"></video>-->
+						</figure>
+						<section>
+							<a href="">
+								<h2 class="pelicula__title">Jurassic World</h2>
+							</a>
+							<ul class="pelicula__categorias">
+								<li class="categoria__item">
+									<a class="categoria__name" href="">Science Fiction</a>
+								</li>
+							</ul>	
+						</section>			
+					</div>
+				</div>
+
+				<div class="col col-sm-3">
+					<div class="pelicula">
+						<figure class="pelicula__poster">
+							<img class="pelicula__image" src="images/Jurassic_World_poster_2-min.jpg">
+							<div class="pelicula__info">
+								<a class="btn pelicula__puntaje" href="#"><i class=""></i>8.5</a>
+							</div>
+							<!--<video class="pelicula__trailer" src="videos/source.mp4" controls="true"></video>-->
+						</figure>
+						<section>
+							<a href="">
+								<h2 class="pelicula__title">Jurassic World 2</h2>
+							</a>
+							<ul class="pelicula__categorias">
+								<li class="categoria__item">
+									<a class="categoria__name" href="">Science Fiction</a>
+								</li>
+							</ul>	
+						</section>			
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		setTimeout(function(){
+			let peliculas = listapeliculas.getElementsByClassName('pelicula');
+			let html = "";
+			for (var i = 10 - 1; i >= 0; i--) {
+				for (var j = peliculas.length - 1; j >= 0; j--) {
+					html += '<div class="col col-sm-3">' + peliculas[j].outerHTML + '</div>';
+				}
+			}
+			listapeliculas.innerHTML = html;
+
+		},1000)
+	</script>
+	<script type="text/javascript">
+		/*setTimeout(function(){
+			let peliculas = listapeliculas.getElementsByClassName('pelicula');
+			let html = "";
+			for (var i = 10 - 1; i >= 0; i--) {
+				for (var j = peliculas.length - 1; j >= 0; j--) {
+					listapeliculas.prepend('<div class="col col-sm-3">' + peliculas[j].outerHTML + '</div>');
+				}
+			}
+
+		},3000)*/
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+.dm_theme_movie
+{
+	background-color: var(--body-bg-color);
+	background: linear-gradient(70deg, #1e2830 40%,#384c58 140%);
+	min-width: 100vw;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.dm_theme_movie.dm_layout_panel
+{
+
+    --dm_layout_panel__menu-height: 70px; 
+    --dm_layout_panel__side-width: 20%; 
+
+    --body-bg-color: #1e2830;
+}
+
+.dm_theme_movie .menu
+{
+	--menu-heigh: 70px;
+	--menu__btn_search-background-color: #1c8d71;
+	--menu__btn_search-color: white;
+	--menu__title-color: white;
+}
+
+.dm_theme_movie .pelicula
+{
+	--pelicula-margin-top: 35px;
+	--pelicula__puntaje-background-color: #fa8f00;
+
+	margin-top: var(--pelicula-margin-top);
+}

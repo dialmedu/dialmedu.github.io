@@ -1,0 +1,63 @@
+/* PANEL */
+/*
+   ______________
+  |  |___________| ⇨ MENU
+  |  |           |
+  |  |   MAIN    |
+  |  |           |
+  |__|___________|
+   ⇩
+  SIDE   
+  <body class="..panel">
+    <header class="..menu"></header>
+    <nav class="..side"><nav>
+    <section class="..main"></section>
+  </body>
+*/
+
+.dm_layout_panel
+{
+    --dm_layout_panel__menu-height: 100px; 
+    --dm_layout_panel__menu-padding-left: 5%; 
+    --dm_layout_panel__side-width: 20%;
+    --dm_layout_panel__main-padding-left: 5%; 
+}
+
+.dm_layout_panel__menu
+{
+	z-index: 100;
+  	position: fixed;
+  	margin-left: var(--dm_layout_panel__side-width);
+
+  	height: var(--dm_layout_panel__menu-height);
+  	width: calc(100% - var(--dm_layout_panel__side-width));
+  
+  	padding-left: var(--dm_layout_panel__menu-padding-left);
+  	/*box-shadow: 1px 0px 5px -2px black;*/
+  	line-height: var(--dm_layout_panel__menu-height);
+}
+
+.dm_layout_panel__side
+{
+	z-index: 200;
+	position: fixed;
+	
+	width: var(--dm_layout_panel__side-width);
+	height: 100vh;
+	
+	/*box-shadow: 0px var(--dm_layout_panel__menu-height) 5px 0px black;*/
+}
+
+.dm_layout_panel__main
+{
+	margin-top: var(--dm_layout_panel__menu-height);
+	margin-left: var(--dm_layout_panel__side-width);
+	position: absolute;
+	
+	max-height: calc(100vh - var(--dm_layout_panel__menu-height));
+	width: calc(100% - var(--dm_layout_panel__side-width));
+
+	padding-left: var(--dm_layout_panel__main-padding-left);
+	overflow: hidden;
+	overflow-y: auto;
+}

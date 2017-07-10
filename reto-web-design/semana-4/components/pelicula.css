@@ -1,0 +1,99 @@
+
+.pelicula
+{
+	--pelicula__poster-height: 180px;
+	--pelicula__poster-width: 120px;
+	--pelicula__puntaje-background-color: #000;
+	--pelicula__puntaje-color: #fff;
+	--pelicula__image-background: #c0c0c0;
+	--pelicula__title-color: #fff;
+	--pelicula__poster-box-shadow: 0px 10px 15px -6px black;
+	--categoria__item-color: #fff;
+	--categoria__name-color: #fff;
+	--categoria__item-opacity: .5;
+
+}
+
+.pelicula__poster
+{
+	position: relative;
+	
+	height: var(--pelicula__poster-height);
+	width: var(--pelicula__poster-width);
+}
+
+.pelicula__image {
+	width: 100%;
+	height: 100%;
+	
+	border: none;
+	background: var(--pelicula__image-background);
+}
+
+.pelicula__info {
+	position: absolute;
+	left: 0;
+	bottom: 1rem;
+	
+	width: 110%;
+	
+	text-align: right;
+}
+
+.pelicula__puntaje {
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	border-radius: 44%;
+	padding: 0;
+	font-size: 1rem;
+	text-align: center;
+	
+	background-color: var(--pelicula__puntaje-background-color);
+	color: var(--pelicula__puntaje-color);
+	box-shadow: 0px 0px 5px -2px black;
+}
+
+.pelicula__title {
+	font-size: small;
+	color: var(--pelicula__title-color);
+	margin-bottom: 5px;
+}
+
+.pelicula__categorias {
+	padding: 0;
+}
+
+.categoria__item,.categoria__name {
+	font-size: x-small;
+	list-style: none;
+	color: var(--categoria__item-color);
+	opacity: var(--categoria__item-opacity);
+}
+
+.pelicula__poster {
+	box-shadow: var(--pelicula__poster-box-shadow);
+	/* border: none; */
+}
+
+video.pelicula__trailer {
+	position: relative;
+	top: -180px;
+	left: 0;
+	width: 120px;
+	height: 180px;
+	z-index: 100;
+	opacity: 0;
+	background-color: black;
+	transition: .5s;
+}
+
+video.pelicula__trailer:hover {
+	opacity: 1;
+	top: 0;
+	left: -40%;
+	width: 180%;
+	z-index: 200;
+	height: auto;
+	transition-delay: .5s;
+}
