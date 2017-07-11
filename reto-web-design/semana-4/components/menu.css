@@ -9,7 +9,7 @@
 .menu__title {
 	line-height: var(--menu-heigh);
 	margin: 0;
-	font-size: large;
+	font-size: x-large;
 	color: var(--menu__title-color);
 }
 
