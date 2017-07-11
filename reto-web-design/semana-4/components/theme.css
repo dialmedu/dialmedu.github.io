@@ -74,6 +74,7 @@
 
 	.pelicula__title {
 		font-size: medium;
+		max-width: 80%;
 	}
 
 	.pelicula__puntaje {
