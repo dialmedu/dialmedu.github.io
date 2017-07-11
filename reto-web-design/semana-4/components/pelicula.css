@@ -17,7 +17,7 @@
 .pelicula__poster
 {
 	position: relative;
-	
+
 	box-shadow: var(--pelicula__poster-box-shadow);	
 	height: var(--pelicula__poster-height);
 	width: var(--pelicula__poster-width);
@@ -68,6 +68,9 @@
 	font-size: small;
 	color: var(--pelicula__title-color);
 	margin-bottom: 5px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 .pelicula__categorias {

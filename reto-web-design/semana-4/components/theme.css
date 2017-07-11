@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'GillSansMt';
+  src: url('../fonts/gill-sans-mt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+	font-family: 'GillSansMt','Helvetica', sans-serif;
+}
+
 .dm_theme_movie
 {
 	background-color: var(--body-bg-color);
@@ -24,6 +35,10 @@
 	--menu__btn_search-height-1200px: 50px;
 	--menu__btn_search-width-1200px: 50px;
 	--menu__title-color: white;
+}
+
+.dm_theme_movie .menu_side
+{
 	--menu__link-height-1200px: 40px;
 }
 
@@ -31,43 +46,53 @@
 {
 	--pelicula-margin-top: 35px;
 	--pelicula__puntaje-background-color: #fa8f00;
+	--pelicula__puntaje-height: 35px;
 
 	margin-top: var(--pelicula-margin-top);
 }
 
 
 
+
+#listapeliculas {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
 @media (min-width: 1200px){
 	
-	a.menu__link {
+	.menu__link {
 		font-size: medium;
 		height: var(--menu__link-height-1200px);
 		line-height: var(--menu__link-height-1200px);
 	}
 
-	h2.pelicula__title {
+	.pelicula__title {
 		font-size: medium;
 	}
 
-	li.categoria__item {
-	}
+	.pelicula__puntaje {
+		height: var(--pelicula__puntaje-height);
+		width: var(--pelicula__puntaje-height);
+		line-height: var(--pelicula__puntaje-height);
+		border-radius: var(--pelicula__puntaje-height);
+	}	
 
-	a.categoria__name {
+	.categoria__name {
 		font-size: larger;
 	}
 
-	.col.col-sm-4 {}
-
-	figure.user__nick {
+	.user__nick {
 		padding: 0 40%;
 		transform: scale(1.4);
 	}
 
-	h2.user_name {
+	.user_name {
 		font-size: larger;
 	}
 
-	a.btn.menu__btn_search {
+	.btn.menu__btn_search {
 		height: var(--menu__btn_search-height-1200px);
 		width: var(--menu__btn_search-width-1200px);
 		line-height: var(--menu__btn_search-height-1200px);
