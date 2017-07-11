@@ -12,9 +12,9 @@
 .dm_theme_movie
 {
 	background-color: var(--body-bg-color);
-	background: radial-gradient(ellipse at center, rgba(56,76,88,1) 0%, rgba(30,40,48,1) 50%, rgba(30,40,48,1) 100%);
-	background: -moz-radial-gradient(center, ellipse cover, rgba(56,76,88,1) 0%, rgba(30,40,48,1) 50%, rgba(30,40,48,1) 100%);
-	background-size: 200% 150%;
+	background: radial-gradient(ellipse at center, #53636c 25%, #1e2830 50%, #1e2830 100%)
+	background: -moz-radial-gradient(center, ellipse cover, #53636c 25%, rgba(30,40,48,1) 50%, rgba(30,40,48,1) 100%);
+	background-size: 200% 300%;
 	background-position-y: 50%;
 	min-width: 100vw;
 	min-height: 100vh;
