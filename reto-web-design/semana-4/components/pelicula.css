@@ -26,8 +26,8 @@
 
 @media (min-width: 1200px){
 	.pelicula__poster {
-		height: calc( var(--pelicula__poster-height) + 50px);
-		width: calc( var(--pelicula__poster-width) + 50px );
+		height: calc( var(--pelicula__poster-height) + 70px);
+		width: calc( var(--pelicula__poster-width) + 55px );
 	}
 }
 
