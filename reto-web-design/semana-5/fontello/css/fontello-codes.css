@@ -1,0 +1,3 @@
+
+.icon-logo:before { content: '\d100'; } /* '턀' */
+.icon-pluss:before { content: '\d101'; } /* '턁' */

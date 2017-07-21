@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Semana 5 - Dashboard</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../modules/bootstrap/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="fontello/css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+</head>
+<body>
+<div class="main-ui" id="main-ui">
+	<header class="nav" id="nav">
+		<div class="row-fluid">
+			<div class="col-sm-5">
+				<figure class="nav__brand">
+					<i class="brand__logo icon-logo"></i>
+					<h1 class="brand__text">VSCO</h1>
+				</figure>
+			</div>
+			<div class="col-sm-6">
+				<ul class="nav__options">
+					<button class="nav__option button button--icon btn">
+						<i class="button__icon icon-pluss"></i>
+						<span class="button__text">Option</span>
+					</button>
+					<button class="nav__option button button--icon btn">
+						<i class="button__icon icon-pluss"></i>
+						<span class="button__text">Option</span>
+					</button>
+					<button class="nav__option button button--icon btn">
+						<i class="button__icon icon-pluss"></i>
+						<span class="button__text">Option</span>
+					</button>
+				</ul>
+			</div>
+			<div class="col-sm-1">
+				<div class="nav__user user">
+					<figure class="user__nick">
+						<img class="user__image"></img>
+					</figure>
+				</div>
+			</div>
+			
+		</div>
+		
+	</header>
+	<section class="board" id="board">
+		<div class="row-fluid">
+				<section class="board__tab tab">
+					<div class="col-sm-7">
+						<ul class="tab__nav">
+							<button class="tab__option tab__option--active" onclick="active_tab(this)">Filters</button>
+							<button class="tab__option"  onclick="active_tab(this)">Adjust</button>
+						</ul>
+						<div class="tab__container">
+							<div class="board__filters filters">
+								<div class="filter">
+									<i class="filter__icon"></i>
+									<span class="filter__title"></span>
+									<div class="filter__switch"></div>
+								</div>
+							</div>
+							<div class="board__adjusts adjusts">
+								
+							</div>
+						</div>
+					</div>	
+				</section>
+			</div>
+			<div class="col-sm-5">
+				<section class="board__image"></section>
+			</div>
+		</div>
+		
+		
+	</section>
+</div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

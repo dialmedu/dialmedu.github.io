@@ -1,0 +1,114 @@
+.nav {
+    background: #f2f4f7;
+    --nav-height: 90px;
+    line-height: 90px;
+    height: var( --nav-height );
+}
+
+.nav__brand {
+    vertical-align: middle;
+    width: 100%;
+    height: var( --nav-height );
+}
+
+.nav__options {
+    margin: 0;
+    height: var( --nav-height );
+    text-align: right;
+}
+
+.nav__option,
+.nav__option.button--icon {
+    font-size: 3rem;
+    color: black;
+    background-color: transparent; 
+}
+
+.button {
+    padding: 0px 12px;
+    line-height: inherit;
+    border-radius: 0;
+    outline: none;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button--icon .button__text {
+    display: none;
+}
+
+
+.brand__logo {
+    display: inline-block;
+    font-size: 4rem;
+}
+
+.brand__text {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 0;
+}
+
+
+.user__image {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background: #c3c3c3;
+}
+
+.user__nick {
+    text-align: center;
+}
+
+
+.board__tab.tab > div {
+    padding: 0;
+}
+
+.tab__nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 25px 10px -25px #dadde0;
+}
+
+.tab__option {
+    width: 50%;
+    height: 90px;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    opacity: .9;
+}
+
+.tab__option--active {
+    outline: none;
+    color: black;
+    background: white;
+    opacity: 1;
+    animation-name: tab_option_active;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tab_option_active
+{
+    0%
+    {
+        background-color: white;
+        opacity: 1;
+        box-shadow: none;
+    }
+    100%
+    {
+        box-shadow: 0px 25px 20px -20px #cacaca;
+    }
+}

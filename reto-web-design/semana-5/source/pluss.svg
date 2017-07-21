@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="26.458334mm"
+   height="26.45833mm"
+   viewBox="0 0 26.458334 26.45833"
+   version="1.1"
+   id="svg4515"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="pluss.svg">
+  <defs
+     id="defs4509" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.3099321"
+     inkscape:cx="24.273241"
+     inkscape:cy="73.464285"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4512">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-42.800103,-125.9383)">
+    <path
+       id="rect5062"
+       style="opacity:1;fill:#010101;fill-opacity:1;stroke:none;stroke-width:4.21615648;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 55.273903,134.63357 v 3.77859 h -3.77858 v 1.51101 h 3.77858 v 3.77859 h 1.511019 v -3.77859 h 3.778581 v -1.51101 h -3.778581 v -3.77859 z m -12.4738,-8.69527 v 26.45833 H 69.258437 V 125.9383 Z m 1.203028,1.20303 h 24.052795 v 24.05279 H 44.003131 Z"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
