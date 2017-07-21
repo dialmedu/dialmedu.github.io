@@ -1,8 +1,8 @@
 .nav {
     background: #f2f4f7;
     --nav-height: 90px;
-    line-height: 90px;
-    height: var( --nav-height );
+    line-height: var( --nav-height );
+    min-height: var( --nav-height );
 }
 
 .nav__brand {
@@ -13,6 +13,7 @@
 
 .nav__options {
     margin: 0;
+    padding: 0;
     height: var( --nav-height );
     text-align: right;
 }
@@ -29,6 +30,14 @@
     line-height: inherit;
     border-radius: 0;
     outline: none;
+}
+
+@media (max-width: 768px)
+{
+    .button {
+        padding: 0px 2vw;
+    }
+
 }
 
 .button:focus {
@@ -111,4 +120,30 @@
     {
         box-shadow: 0px 25px 20px -20px #cacaca;
     }
+}
+
+
+@media (max-width: 760px)
+{
+    .nav {
+        --nav-height: 60px;
+    }
+
+    .brand__logo {
+        font-size: 3rem;
+    }
+
+    .brand__text {
+        display: none;
+    }
+
+    .nav__option.button.button--icon {
+        font-size: 2rem;
+    }
+
+    .user__image {
+        width: 32px;
+        height: 32px;
+    }
+
 }
