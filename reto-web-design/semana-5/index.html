@@ -9,6 +9,22 @@
 
 	<link rel="stylesheet" type="text/css" href="fontello/css/fontello.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/board.css">
+	<link rel="stylesheet" type="text/css" href="css/filter.css">
+
+	<style type="text/css">
+		body{
+			background-color: #f1f1f1;
+		}
+		#main-ui {
+		    width: 90%;
+		    margin: 5%;
+		    margin-top: 3%;
+		    box-shadow: 0px 0px 50px -20px #000000;
+		    display: inline-block;
+		    background: white;
+		}
+	</style>
 </head>
 <body>
 <div class="main-ui" id="main-ui">
@@ -23,15 +39,15 @@
 			<div class="col-sm-6 col-xs-8">
 				<ul class="nav__options">
 					<button class="nav__option button button--icon btn">
-						<i class="button__icon icon-pluss"></i>
+						<i class="button__icon icon-list-add"></i>
 						<span class="button__text">Option</span>
 					</button>
 					<button class="nav__option button button--icon btn">
-						<i class="button__icon icon-pluss"></i>
+						<i class="button__icon icon-shared"></i>
 						<span class="button__text">Option</span>
 					</button>
 					<button class="nav__option button button--icon btn">
-						<i class="button__icon icon-pluss"></i>
+						<i class="button__icon icon-buy"></i>
 						<span class="button__text">Option</span>
 					</button>
 				</ul>
@@ -39,7 +55,7 @@
 			<div class="col-sm-1 col-xs-2">
 				<div class="nav__user user">
 					<figure class="user__nick">
-						<img class="user__image"></img>
+						<img class="user__image" src="https://scontent.fctg1-2.fna.fbcdn.net/v/t1.0-1/p50x50/14650767_10210026801883933_3966813777894458301_n.jpg?oh=85fbbea3cf8436b2330534da20985104&oe=59FF831D"></img>
 					</figure>
 				</div>
 			</div>
@@ -57,10 +73,99 @@
 						</ul>
 						<div class="tab__container">
 							<div class="board__filters filters">
-								<div class="filter">
-									<i class="filter__icon"></i>
-									<span class="filter__title"></span>
-									<div class="filter__switch"></div>
+								<div class="container-fluid">
+									<!-- filter -->
+									<div class="col-sm-6">
+										<div class="filter" id="js_filter_contrast">
+											<div class="col-sm-2">
+												<i class="filter__icon icon-constrast"></i>
+											</div>
+											<div class="col-sm-10">
+												<span class="filter__title">contrast</span>
+												<div class="filter__switch">
+												</div>
+											</div>
+										</div>
+									</div><!--end filter-->
+									<!-- filter -->
+									<div class="col-sm-6">
+										<div class="filter" id="js_filter_saturate">
+											<div class="col-sm-2 col-xs-12">
+												<i class="filter__icon icon-saturate"></i>
+											</div>
+											<div class="col-sm-10">
+												<span class="filter__title">saturate</span>
+												<div class="filter__switch">
+												</div>
+											</div>
+										</div>
+									</div><!--end filter-->
+									<!-- filter -->
+									<div class="col-sm-6">
+										<div class="filter" id="js_filter_brightness">
+											<div class="col-sm-2 col-xs-12">
+												<i class="filter__icon icon-constrast"></i>
+											</div>
+											<div class="col-sm-10">
+												<span class="filter__title">brightness</span>
+												<div class="filter__switch">
+												</div>
+											</div>
+										</div>
+									</div><!--end filter-->
+									<!-- filter -->
+									<div class="col-sm-6">
+										<div class="filter" id="js_filter_invert">
+											<div class="col-sm-2">
+												<i class="filter__icon icon-saturate"></i>
+											</div>
+											<div class="col-sm-10">
+												<span class="filter__title">invert</span>
+												<div class="filter__switch">
+												</div>
+											</div>
+										</div>
+									</div><!--end filter-->
+									<!-- filter -->
+									<div class="col-sm-6">
+										<div class="filter filter__pro" id="js_filter_instagram">
+											<div class="col-sm-2">
+												<i class="filter__icon icon-instagram"></i>
+											</div>
+											<div class="col-sm-10">
+												<span class="filter__title">instagram</span>
+												<div class="filter__switch">
+												</div>
+											</div>
+										</div>
+									</div><!--end filter-->
+									<!-- filter -->
+									<div class="col-sm-6">
+										<div class="filter filter__pro" id="js_filter_fantasy">
+											<div class="col-sm-2">
+												<i class="filter__icon icon-crown"></i>
+											</div>
+											<div class="col-sm-10">
+												<span class="filter__title">fantasy</span>
+												<div class="filter__switch">
+												</div>
+											</div>
+										</div>
+									</div><!--end filter-->
+									<!-- filter -->
+									<div class="col-sm-6">
+										<div class="filter filter__pro" id="js_filter_facebook">
+											<div class="col-sm-2">
+												<i class="filter__icon icon-facebook-circled"></i>
+											</div>
+											<div class="col-sm-10">
+												<span class="filter__title">facebook</span>
+												<div class="filter__switch">
+												</div>
+											</div>
+										</div>
+									</div><!--end filter-->
+
 								</div>
 							</div>
 							<div class="board__adjusts adjusts">
@@ -69,13 +174,19 @@
 						</div>
 					</div>	
 				</section>
-			</div>
-			<div class="col-sm-5">
-				<section class="board__image"></section>
+				<section class="board__edit">
+					<div class="col-sm-5">
+						<figure class="edit__canva">
+							<img id="edit__imagen" class="edit__imagen" src="images/demo.jpg">
+						</figure>
+						<div class="tab__nav">
+							<button class="tab__option edit__save">save</button>
+							<button class="tab__option edit__publish">publish</button>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
-		
-		
 	</section>
 </div>
 <script type="text/javascript" src="js/main.js"></script>
