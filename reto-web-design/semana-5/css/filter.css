@@ -55,6 +55,11 @@
     left: -4px;
 }
 
+.filter__point:hover span {
+    top: -32px;
+    left: -4px;
+}
+
 .filter__switch div[class^="col-"] {
     padding: 0;
 }
