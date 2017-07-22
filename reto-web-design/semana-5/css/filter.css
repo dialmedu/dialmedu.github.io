@@ -48,6 +48,13 @@
     margin-top: -2px 
 }
 
+.filter__point:hover .filter__signo,
+.filter__point:hover .filter__number,
+{
+    top: -33px;
+    left: -4px;
+}
+
 .filter__switch div[class^="col-"] {
     padding: 0;
 }
