@@ -1,0 +1,93 @@
+.filter {
+    height: 80px;
+    line-height: 50px;
+    margin: 20px 0px;
+}
+
+.filter__icon {
+    font-size: 30px;
+    vertical-align: middle;
+    line-height: 80px;
+}
+
+.filter__title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.filter__point {
+    font-size: 0;
+    padding: 0;
+    background: #c3c3c3;
+    font-weight: bolder;
+    color: black;
+    width: 8px;
+    height: 8px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 100%;
+    line-height: inherit;
+}
+
+.filter__point:active,
+.filter__point--active {
+    font-size: 11px;
+    background: black;
+    width: 12px;
+    height: 12px;
+    margin-top: -2px 
+}
+
+.filter__point:hover,
+.filter__point--hover {
+    font-size: 11px;
+    background: #e8c403;
+    width: 12px;
+    height: 12px;
+    margin-top: -2px 
+}
+
+.filter__switch div[class^="col-"] {
+    padding: 0;
+}
+
+.filter__signo {
+    position: relative;
+}
+
+.filter__number {
+    position: relative;
+}
+
+.filter__pro {
+    opacity: 0.8;
+}
+
+.filter__pro:before {
+    content: "PRO";
+    position: absolute;
+    right: 20%;
+    color: red;
+    background: #e8c403;
+    line-height: 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    top: 24px;
+}
+
+@media (max-width: 760px)
+{
+    .filter__icon {
+        float: right;
+        width: 100%;
+        font-size: 15px;
+        line-height: 15px;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+    }
+
+}
