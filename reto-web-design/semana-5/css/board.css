@@ -15,7 +15,7 @@
     width: 50%;
     height: 90px;
     border: none;
-    background: black;
+    background: #0e1c23;
     color: white;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -24,7 +24,7 @@
 
 .tab__option--active {
     outline: none;
-    color: black;
+    color: #0e1c23;
     background: white;
     opacity: 1;
     animation-name: tab_option_active;
@@ -64,5 +64,5 @@
 .edit__save
 {
 	background: gold;
-    color: black;
+    color: #0e1c23;
 }
