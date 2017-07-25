@@ -1,0 +1,80 @@
+.menu {
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    width: 100px;
+    background: #fafbfd;
+    box-shadow: 1px 0px 5px -3px;
+    z-index: 999;
+    display: block;
+}
+
+.board {
+    position: fixed;
+    height: 100vh;
+    width: calc(100% - 100px );
+    right: 0;
+    display: block;
+}
+
+.board__nav {
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+    background: #fafbfd;
+    box-shadow: 0px 1px 5px -3px;
+}
+
+.nav__options {
+    text-align: right;
+}
+
+.nav__user {
+    overflow: hidden;
+    padding-left: .5rem;
+    position: relative;
+    width: 350%;
+    right: 0%;
+}
+
+
+.nav__config {
+    opacity: 0;
+    overflow: hidden;
+    display: initial;
+
+
+}
+
+
+.nav__user:hover {
+    background: #fafbfd;
+    position: relative;
+    animation-name: user_left;
+    animation-duration: 1s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    
+}
+
+.nav__user:hover .nav__config {
+    transition-duration: 1s;
+    transition-delay: .9s;
+    opacity: 1;
+}
+
+@keyframes user_left
+{
+    0%
+    {
+        right: 0%;
+        width: 100%;
+    }
+    100%
+    {
+        right: 280%;
+        width: 400%;
+        animation-delay: 2s;
+    }
+}

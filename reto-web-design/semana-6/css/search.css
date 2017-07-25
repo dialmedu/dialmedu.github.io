@@ -1,0 +1,39 @@
+
+.search {
+    vertical-align: middle;
+    padding: 0 10px;
+}
+
+.search__icon {
+    color: #dddddd;
+    font-size: 24px;
+    vertical-align: sub;
+}
+
+.search__query {
+    border: 0;
+    background: transparent;
+    font-size: 18px;
+    display: inline-block;
+    height: 40px;
+    padding: 5px 25px;
+}
+
+.search__query:focus {
+    background: #fafbfd;
+    outline: none;
+    text-shadow: 0px 1px 2px #d3e2ff;
+}
+
+.search__query ~ .search__action {
+    display: none;
+    transition: 1s;
+}
+
+.search__query:focus ~ .search__action {
+    display: inline-block;
+}
+
+.search__action:hover {
+    display: inline-block;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>#6 - Dashboard</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../modules/bootstrap/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/search.css">
+	<link rel="stylesheet" type="text/css" href="css/user.css">
+
+	<link rel="stylesheet" type="text/css" href="css/theme.css">
+
+	<style type="text/css">
+		body {
+		    background: whitesmoke;
+		}
+
+		.main-ui {
+		    width: 90vw;
+		    margin: 0 auto;
+		    position: relative;
+		    display: block;
+		    height: 95vh;
+		    background: white;
+		    box-shadow: 0 0 30px -10px;
+		    margin-top: 2.5vh;
+		}
+
+		.main-ui .menu {
+		    position: absolute;
+		    height: 100%;
+		}
+
+		.main-ui .board {
+		    position: absolute;
+		}
+	</style>
+</head>
+<body>
+<div class="main-ui">
+	<header class="menu">
+		<nav class="nav">
+			<figure class="nav__brand">
+				<img class="nav__logo"></img>
+			</figure>
+			<nav class="nav__menu">
+				<div class="nav__item"></div>
+			</nav>
+		</nav>
+	</header>
+	<section class="board">
+			<div class="board__nav">
+				<nav>
+					<div class="row-fluid">
+						<div class="col col-md-7">
+							<div class="col col-md-1"></div>
+							<div class="col col-md-11">
+								<form class="nav__search search">
+									<i class="search__icon glyphicon glyphicon-search"></i>
+									<input class="search__query" type="text" name="query" placeholder="Find a user, team, meeting...">
+									<input class="search__action btn" type="button" name="action" value="search">
+								</form>
+							</div>
+						</div>
+						<div class="col col-md-4 btn-group">
+							<div class="nav__options">
+								<div class="btn-group">
+									<button class="bnt__invite btn btn-default">
+										<span class="btn__icon glyphicon glyphicon-send"></span>
+										<span class="btn__text">invite</span>
+									</button>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col col-md-1">
+							<div class="nav__user">
+								<div class="row-fluid">
+									<div class="col col-md-4">
+										<figure class="user">
+											<img class="user__imagen"></img>
+										</figure>
+									</div>
+									<div class="nav__config">
+										<div class="col col-md-4">
+											<button class="btn btn-default">config</button>
+										</div>
+										<div class="col col-md-4">
+											<button class="btn btn-primary">logout</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="board__dash">
+				<div class="row">
+					<div class="dash__content">
+						<div class="col col-md-9">
+							<div class="row">
+								<header>
+									<div class="col col-md-8">
+										<h1 class="dash__title">Sessions</h1>
+										<button class="btn">Export</button>		
+									</div>
+									<div class="dash__options">
+										<div class="col col-md-4">
+											<button class="btn">Cancel</button>	
+										</div>
+									</div>
+								</header>
+							</div>
+							<div class="row">
+								<div class="dash__page">
+								
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="dash__side">
+						<div class="col col-md-3">
+						
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+</div>
+</body>
+</html>
