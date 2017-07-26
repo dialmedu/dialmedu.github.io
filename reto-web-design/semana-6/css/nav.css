@@ -37,7 +37,6 @@
     right: 0%;
 }
 
-
 .nav__config {
     opacity: 0;
     overflow: hidden;
@@ -45,7 +44,6 @@
 
 
 }
-
 
 .nav__user:hover {
     background: #fafbfd;
@@ -77,4 +75,36 @@
         width: 400%;
         animation-delay: 2s;
     }
+}
+
+.nav__brand {
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+}
+
+.nav__menu {
+    height: calc(100vh - 100px);
+    padding-top: 60px;
+}
+
+.nav__item {
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+.nav__link {
+    width: 100%;
+    line-height: 60px;
+    display: block;
+    cursor: pointer;
+}
+
+.nav__icon {
+    font-size: 28px;
+}
+
+.nav__link:hover {
+    text-decoration: none;
 }

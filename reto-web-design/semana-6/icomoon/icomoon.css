@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?1nrjwd');
+  src:  url('fonts/icomoon.eot?1nrjwd#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?1nrjwd') format('truetype'),
+    url('fonts/icomoon.woff?1nrjwd') format('woff'),
+    url('fonts/icomoon.svg?1nrjwd#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-document:before {
+  content: "\e005";
+}
+.icon-grid:before {
+  content: "\e019";
+}
+.icon-hourglass:before {
+  content: "\e01f";
+}
+.icon-gears:before {
+  content: "\e02b";
+}
+.icon-layers:before {
+  content: "\e031";
+}
+.icon-magnifying-glass:before {
+  content: "\e037";
+}
+.icon-profile-male:before {
+  content: "\e040";
+}
+.icon-chat:before {
+  content: "\e049";
+}
+.icon-download:before {
+  content: "\e04d";
+}
+.icon-alarmclock:before {
+  content: "\e059";
+}
