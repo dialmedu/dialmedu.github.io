@@ -5,38 +5,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../modules/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
 
 	<link rel="stylesheet" type="text/css" href="css/nav.css">
 	<link rel="stylesheet" type="text/css" href="css/search.css">
 	<link rel="stylesheet" type="text/css" href="css/user.css">
 	<link rel="stylesheet" type="text/css" href="css/board.css">
-	<link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
 
 	<link rel="stylesheet" type="text/css" href="css/theme.css">
 
 	<style type="text/css">
 		body {
 		    background: whitesmoke;
-		}
-
-		.main-ui {
-		    width: 90vw;
-		    margin: 0 auto;
-		    position: relative;
-		    display: block;
-		    height: 95vh;
-		    background: white;
-		    box-shadow: 0 0 30px -10px;
-		    margin-top: 2.5vh;
-		}
-
-		.main-ui .menu {
-		    position: absolute;
-		    height: 100%;
-		}
-
-		.main-ui .board {
-		    position: absolute;
 		}
 	</style>
 </head>
@@ -54,7 +34,7 @@
 					</a>
 				</div>
 				<div class="nav__item">
-					<a class="nav__link" target="layers" href="#">
+					<a class="nav__link--active" target="layers" href="#">
 						<i class="nav__icon icon-hourglass"></i>
 					</a>
 				</div>
@@ -92,7 +72,7 @@
 								<form class="nav__search search">
 									<i class="search__icon glyphicon glyphicon-search"></i>
 									<input class="search__query" type="text" name="query" placeholder="Find a user, team, meeting...">
-									<input class="search__action btn" type="button" name="action" value="search">
+									<input class="search__action btn btn-default" type="button" name="action" value="search">
 								</form>
 							</div>
 						</div>
@@ -137,7 +117,10 @@
 								<header>
 									<div class="col col-md-8">
 										<h1 class="dash__title">Sessions</h1>
-										<button class="btn btn-default">Export</button>		
+										<button class="btn btn-default">
+											<span class="btn__icon icon-download"></span>
+											<span class="btn__text">Export</span>
+										</button>		
 									</div>
 									<div class="dash__options">
 										<div class="col col-md-4">
@@ -155,8 +138,13 @@
 						</div>
 					</div>
 					<div class="dash__side">
-						<div class="col col-md-3">
-						
+						<div class="col col-md-12">
+							<div class="alert">
+								<i class="alert__icon icon-alarmclock"></i>
+								<span class="alert__info">3</span>
+								<h2 class="alert__title">forecast</h2>
+								<p class="alert__description">24 Julio</p>
+							</div>
 						</div>
 					</div>
 				</div>

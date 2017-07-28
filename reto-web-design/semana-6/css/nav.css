@@ -33,7 +33,7 @@
     overflow: hidden;
     padding-left: .5rem;
     position: relative;
-    width: 350%;
+    width: 300px;
     right: 0%;
 }
 
@@ -67,12 +67,10 @@
     0%
     {
         right: 0%;
-        width: 100%;
     }
     100%
     {
-        right: 280%;
-        width: 400%;
+        right: 270%;
         animation-delay: 2s;
     }
 }
@@ -101,10 +99,29 @@
     cursor: pointer;
 }
 
-.nav__icon {
-    font-size: 28px;
-}
-
+.nav__link--active,
 .nav__link:hover {
     text-decoration: none;
 }
+
+.nav__link--active:before,
+.nav__link:hover:before,
+.nav__link:active:before {
+    content: "";
+    height: 40px;
+    width: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: block;
+    background-color: #3381d0;
+    position: absolute;
+    left: -5px;
+    box-shadow: 0px 0px 5px #6ba1d8;
+    margin-top: 10px;
+}
+
+.nav__icon {
+    font-size: 28px;
+    line-height: 60px;
+}
+

@@ -34,6 +34,10 @@
     display: inline-block;
 }
 
+.search__action {
+    vertical-align: inherit;
+}
+
 .search__action:hover {
     display: inline-block;
 }

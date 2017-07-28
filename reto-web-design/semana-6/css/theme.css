@@ -2,3 +2,15 @@
     border-color: #6ba1d8;
     color: #6ba1d8;
 }
+
+.btn-default:hover {
+    color: white;
+    background-color: #6ba1d8;
+}
+
+.btn-default:active,
+.btn-default:active:hover {
+    background: #ffffff;
+    box-shadow: inset 0px 5px 10px -5px;
+    color: #6ba1d8;
+}
