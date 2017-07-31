@@ -32,10 +32,10 @@
     border-radius: 5px;
     box-shadow: 0px 0px 5px -1px, 0px 3px 5px -3px;
     position: relative;
-    height: 130px;
     padding: 15px;
     color: white;
     margin-top: 15px;
+    display: inline-block;
 }
 .alert:hover {
     background-color: #6fa6e5;
@@ -67,6 +67,7 @@
     color: rgba(0, 0, 0, 0.7);
     text-transform: capitalize;
     padding-left: 10px;
+    font-size: 24px;
 }
 .alert__description {
     float: right;
@@ -90,4 +91,21 @@
     text-align: center;
     color: white;
     line-height: 25px;
+}
+
+.dash__subtitle {
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.dash__subtitle:after {
+    width: 50px;
+    height: 5px;
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #3381d0;
+    border-radius: 5px;
+	 margin-top: 10px;
+    margin-left: -2.5px;
 }

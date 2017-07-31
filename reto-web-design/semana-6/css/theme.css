@@ -14,3 +14,10 @@
     box-shadow: inset 0px 5px 10px -5px;
     color: #6ba1d8;
 }
+
+.wrap-ellipsis {
+	max-width: 90%;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

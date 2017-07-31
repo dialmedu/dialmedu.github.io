@@ -1,7 +1,7 @@
 .card 
 {
-	--card_blue-color: blue;
-	--card_red-color: red;
+	--card_blue-color: #6fa6e5;
+	--card_red-color: #fd2b5b;
 	--card_black-color: black;
 	--card_gray-color: rgba(0,0,0,0.5);
 
@@ -10,7 +10,49 @@
 	--card-border-radius: 5px;
 	--card-padding: 10px;
 
+	display: inline-block;
 	width: 100%;
-	min-height: --card-height;
+	min-height: var(--card-height);
+	
+	padding: 10px 10px 10px 10px;
+	background-color: var(--card-background-color);
+	border-radius: var(--card-border-radius);
+    box-shadow: 0px 0px 3px -2px black, 0px 5px 5px -5px;
+}
 
+.card__title {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.card__config
+{
+	padding: 0;
+	display: block;
+	line-height: 20px;
+    width: 2rem;
+}
+
+.card__config:before {
+    content: "...";
+    font-size: 25px;
+    color: var(--card_gray-color);
+}
+
+.card__number {
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.card__number--blue {
+    color: var(--card_blue-color);
+}
+.card__number--red {
+	color: var(--card_red-color)
+}
+
+.card__small {
+    font-size: 14px;
+    color: var(--card_gray-color);
 }
