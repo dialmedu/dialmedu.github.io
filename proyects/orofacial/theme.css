@@ -1,0 +1,147 @@
+.header {
+    height: 60px;
+    box-shadow: 0px 2px 5px -1px #bbb;
+}
+
+.main-ui.container-fluid {
+    height: calc( 100vh - 60px);
+    overflow-y: inherit;
+    overflow-x: hidden;
+}
+
+.main-menu {
+    height: calc( 100vh - 60px);
+    background: #2b8adc;
+    box-shadow: 10px 0px 20px -17px;
+    z-index: 100;
+}
+
+#micanvas {
+   	padding: 15px;
+    box-shadow: 0px 0px 15px -5px;
+    margin-top: calc( 20vh - 60px );
+    width: 65vh;
+    height: 65vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.main-panel {
+    max-height: calc(100vh - 60px);
+    overflow-x: hidden;
+    overflow-y: inherit;
+    background: #2b8adc;
+    padding-top: 15px;
+}
+
+.main-panel__row {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.main-panel__point {
+    opacity: 0.5;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.main-panel__point--active {
+    opacity: 1;
+    border: 1px solid #dc2b64;
+}
+
+.main-panel__point--active:before {
+    content: "ACTIVO";
+    background-color: #dc2b64;
+    color: white;
+    padding-right: 8px;
+    padding-left: 8px;
+    vertical-align: middle;
+    border-radius: 13px;
+    height: 20px;
+    font-size: 10px;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.main-panel__point--completed {
+    opacity: 1;
+    background-color: rgb(231, 240, 255);
+}
+
+.main-panel__point--completed:before {
+    content: "COMPLETADO";
+    background-color: #2b8adc;
+    color: white;
+    padding-right: 5px;
+    padding-left: 5px;
+    vertical-align: middle;
+    border-radius: 13px;
+    height: 20px;
+    font-size: 10px;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.main-panel .card
+{
+	margin-bottom: 15px; 
+}
+
+.main-control.col-md-6 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #f1f1f1;
+    height: calc( 100vh - 60px);
+}
+
+.main-control__upload {
+    position: absolute;
+    width: 66vh;
+    height: 65vh;
+    left: 18%;
+    border: 4px dashed #2b8adc;
+    background-color: white;
+}
+
+.main-control__upload:hover {
+    cursor: pointer;
+    background-color: #f3f9ff;
+}
+
+.main-control__upload h2 {
+ 	text-align: center;
+ 	vertical-align: middle;
+ 	line-height: 65vh;
+}
+
+@media (min-width: 768px){
+	.main-panel.col-md-5 {
+	    -webkit-box-flex: 0;
+	    -webkit-flex: 0 0 42.666667%;
+	    -ms-flex: 0 0 42.666667%;
+	    flex: 0 0 42.666667%;
+	    max-width: 42.666667%;
+	}
+
+	.main-panel.col-md-5:hover {
+	    -webkit-box-flex: 0;
+	    -webkit-flex: 0 0 41.666667%;
+	    -ms-flex: 0 0 41.666667%;
+	    flex: 0 0 41.666667%;
+	    max-width: 41.666667%;
+	    padding-right: 0px;
+	}
+}
