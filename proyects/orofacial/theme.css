@@ -11,28 +11,51 @@
 
 .main-menu {
     height: calc( 100vh - 60px);
-    background: #2b8adc;
     box-shadow: 10px 0px 20px -17px;
     z-index: 100;
+    
+}
+.main-menu--blue
+{
+    background: #2b8adc; 
+    transition: 1s;  
+}
+
+img#imagen {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+input#fileUp-input {
+    color: #2b8adc;
+    border: 0px;
+    margin-left: 8%;
 }
 
 #micanvas {
    	padding: 15px;
     box-shadow: 0px 0px 15px -5px;
-    margin-top: calc( 20vh - 60px );
-    width: 65vh;
-    height: 65vh;
+    margin-top: calc( 13vh - 60px );
+    width: 80vh;
+    height: 75vh;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    transition: 1s;
 }
 
 .main-panel {
     max-height: calc(100vh - 60px);
     overflow-x: hidden;
     overflow-y: inherit;
-    background: #2b8adc;
     padding-top: 15px;
+}
+.main-panel--blue
+{
+    background: #2b8adc;
+    transition: 1s;
 }
 
 .main-panel__row {
@@ -103,17 +126,22 @@
     position: absolute;
     right: 0;
     top: 0;
-    background: #f1f1f1;
     height: calc( 100vh - 60px);
+}
+.main-control--blue
+{
+    background: #f1f1f1;
+    transition: 1s;
 }
 
 .main-control__upload {
     position: absolute;
-    width: 66vh;
-    height: 65vh;
-    left: 18%;
+    width: 80vh;
+    height: 75vh;
+    left: 10%;
     border: 4px dashed #2b8adc;
     background-color: white;
+    overflow: hidden;
 }
 
 .main-control__upload:hover {
@@ -144,4 +172,61 @@
 	    max-width: 41.666667%;
 	    padding-right: 0px;
 	}
+}
+
+
+.main-menu__item {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 15px;
+}
+
+.main-menu__item.brand {
+    padding-top: 5px !important;
+    position: relative;
+}
+
+.main-menu__item.menu {
+    float: right;
+    margin-right: 5%;
+}
+
+.main-menu__item.menu a {
+    padding: 0 11px;
+    font-size: .9rem;
+    opacity: .9;
+}
+
+.main-menu__item.brand h1 {
+    font-size: 1.7rem;
+    line-height: 50px;
+}
+
+.style {
+    position: absolute;
+    right: -170px;
+    top: 14px;
+    display: inline-block;
+    width: 150px;
+}
+
+.style #estilo
+{
+    margin-left: .5rem;
+}
+
+
+
+/* NUEVO ESTILO*/
+.main-panel--white {
+    background: white;
+    transition: 1s;
+}
+.main-control--white {
+    background: white !important;
+    transition: 1s;    
+}
+.header--white {
+    border-bottom: 1px solid #d6d6d6;
+    transition: 1s;
 }

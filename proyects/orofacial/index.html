@@ -4,15 +4,37 @@
 	<title>Orofacial Metrics</title>
 </head>
 <body>
-<div class="header  container-fluid">
-	
+<div class="header header--blue container-fluid">
+	<div class="main-menu__item  brand">
+		<h1>Orofacial <small class="tag_demo">demo</small></h1>
+		<div class="style">
+			<form class="form-inline">
+				<div class="form-group">
+					<label>Estilo: </label>
+					<select id="estilo"  class="form-control" onchange="cambiarEstilo()">
+						<option value="blue" selected>Blue</option>
+						<option value="white">White</option>
+					</select>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="main-menu__item  menu">
+		<ul>
+			<a href="#">Company</a>
+			<a href="#">Pricing</a>
+			<a href="#">Community</a>
+			<a href="login.html">Login</a>
+			<a href="#">Register</a>
+		</ul>
+	</div>
 </div>
 <div class="main-ui container-fluid">
 	<div class="row">
-		<div class="main-menu col-md-1">
+		<div class="main-menu main-menu--blue col-md-1">
 			
 		</div>
-		<div class="main-panel col-md-5">
+		<div class="main-panel main-panel--blue col-md-5">
 			<div class="container-fluid">
 				<div class="card">
 					<div class="card-header">
@@ -234,17 +256,19 @@
 				</div>
 			</div>
 		</div>
-		<div class="main-control col-md-6">
+		<div class="main-control main-control--blue col-md-6">
 			<div class="container-fluid">
 				<div class="main-control__canva">
 					<div class="main-control__upload">
-						<h2>Subir Imagen</h2>
+						<h2 id="upload_title">Subir Imagen</h2>
+						<img class="imagen" id="imagen" src=""></img>
 					</div>
 					<canvas id="micanvas" width="" height="">
 					Este texto se muestra para los navegadores no compatibles con canvas.
 					<br>
 					Por favor, utiliza Firefox, Chrome, Safari u Opera.
 					</canvas>
+					<input type="file" id="fileUp-input" onchange="subir()" multiple>
 				</div>
 			</div>
 		</div>
@@ -254,4 +278,6 @@
 <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="bootstrap_theme.css">
 <link rel="stylesheet" type="text/css" href="theme.css">
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
 </html>

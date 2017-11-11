@@ -1,0 +1,66 @@
+.main-ui--login {
+    position: relative;
+    padding: 0;
+}
+
+.login-header {
+    position: absolute;
+    top: 0;
+    height: 50%;
+    background: #2b8adc;
+    width: 100%;
+}
+
+.header--blue.header--login {
+    color: white !important;
+    background: #2b8adc;
+}
+
+.header--blue.header--login * {
+    color: white;
+    padding-left: 10px;
+}
+
+
+.login-form {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.login-form .form-control {
+    background: no-repeat;
+    border: none;
+}
+
+.login-form h1 {
+    color: white;
+}
+
+.login-form .panel {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    background: white;
+    padding: 15px;
+    padding-top: 25px;
+    margin-top: 8vh;
+    min-height: 35vh;
+    box-shadow: 0px 0px 10px -3px;
+    border-radius: 5px;
+        display: flex;
+    flex-direction: column;
+}
+
+.login-form .panel .form-group {
+    margin: 10px auto;
+}
+
+input.form-control {
+    width: 100% !important;
+    border-bottom: 1px solid #2b8adc !important;
+    border-radius: 0 !important;
+    max-width: none !important;
+}
