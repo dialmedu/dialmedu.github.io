@@ -32,6 +32,13 @@
     animation-fill-mode: forwards;
 }
 
+@media screen and (max-width: 720px) {
+	.board__tab.tab {
+    		max-height: 60vh;
+    		overflow-y: scroll;
+	}
+}
+
 @keyframes tab_option_active
 {
     0%
